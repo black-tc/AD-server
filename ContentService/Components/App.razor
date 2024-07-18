@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en"
+      data-layout="semibox"
+      data-topbar="light"
+      data-sidebar="light"
+      data-sidebar-size="sm"
+      data-sidebar-image="none"
+      data-preloader="disable"
+      data-theme="creative"
+      data-theme-colors="purple"
+      data-sidebar-visibility="show"
+      data-layout-style="default"
+      data-layout-width="fluid"
+      data-bs-theme="light"
+      data-layout-position="fixed"
+      data-body-image="none"
+      data-sidebar-user-show>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="ContentService.styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon-dark.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-dark.ico">
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/standard-base.css">
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    <HeadOutlet @rendermode="InteractiveServer" />
+</head>
+
+<body>
+    <Routes @rendermode="InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+
+
+    <!-- App js -->
+    <script src="assets/js/pages/dashboard-analytics.init.js"></script>
+    <script src="assets/js/pages/dashboard-crypto.init.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
+
+@code {
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    private IComponentRenderMode? RenderModeForPage => HttpContext.Request.Path.StartsWithSegments("/Account")
+        ? null
+        : InteractiveServer;
+}

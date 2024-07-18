@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\TestPublisherProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TestPublisherProject.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\wwwroot\\advert_event_tracking_module.js",
+      "PackagePath": "staticwebassets\\advert_event_tracking_module.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AdvertisingNetwork\\TestPublisherProject\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.TestPublisherProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.TestPublisherProject.props",
+      "PackagePath": "build\\TestPublisherProject.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TestPublisherProject.props",
+      "PackagePath": "buildMultiTargeting\\TestPublisherProject.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.TestPublisherProject.props",
+      "PackagePath": "buildTransitive\\TestPublisherProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

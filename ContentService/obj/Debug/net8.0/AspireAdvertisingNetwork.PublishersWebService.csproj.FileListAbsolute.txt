@@ -1,0 +1,8 @@
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrator\source\repos\AdvertisingNetwork\ContentService\obj\Debug\net8.0\AspireAdvertisingNetwork.PublishersWebService.sourcelink.json

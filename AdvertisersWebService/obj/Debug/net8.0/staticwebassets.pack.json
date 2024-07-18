@@ -1,0 +1,229 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdvertisersWebService.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AdvertisersWebService.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\056ff79f-d9db-4705-93fd-bd8b38d1f719.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\056ff79f-d9db-4705-93fd-bd8b38d1f719.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\12df52ex.hip",
+      "PackagePath": "staticwebassets\\Uploads\\12df52ex.hip"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\27fe00c6-2724-4b17-b77b-967d421c0e10.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\27fe00c6-2724-4b17-b77b-967d421c0e10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\3843eceb-fee6-40c3-a997-a31dbde68391.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\3843eceb-fee6-40c3-a997-a31dbde68391.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\3a06ebd7-3591-4c79-b407-baafd4260510.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\3a06ebd7-3591-4c79-b407-baafd4260510.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\43f1916e-342e-4715-936f-b0892c42168d.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\43f1916e-342e-4715-936f-b0892c42168d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\462e361e-147b-4f3d-a7c1-256f6f65352c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\462e361e-147b-4f3d-a7c1-256f6f65352c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\5d4487a5-9290-4abf-b3d8-a56645678aac.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\5d4487a5-9290-4abf-b3d8-a56645678aac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\5e0a7fa2-7dd4-4515-9f83-f4dd5ed1e34f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\5e0a7fa2-7dd4-4515-9f83-f4dd5ed1e34f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\8153826d-7805-4481-bb86-dd0779368e83.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\8153826d-7805-4481-bb86-dd0779368e83.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\8bc58b9e-eca6-4d28-b523-c8b66950afd5.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\8bc58b9e-eca6-4d28-b523-c8b66950afd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\96946ae4-303f-4916-bda9-8f2217bca373.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\96946ae4-303f-4916-bda9-8f2217bca373.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\973e77b5-8271-4833-aa82-e8c84fb9600e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\973e77b5-8271-4833-aa82-e8c84fb9600e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\9f14b990-b871-40f1-bdeb-bbb94ea6c711.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\9f14b990-b871-40f1-bdeb-bbb94ea6c711.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\ad.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\b78de78f-5cd8-4df6-8e21-5bb700557067.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\b78de78f-5cd8-4df6-8e21-5bb700557067.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\bd45d549-d840-45f5-841a-81b80c09f44a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\bd45d549-d840-45f5-841a-81b80c09f44a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\ce1340c3-1ed9-43ee-8c17-8f6be3c5b81b.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ce1340c3-1ed9-43ee-8c17-8f6be3c5b81b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\dc11da03-ed8a-4dd4-8c68-b7ed7bf70b69.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\dc11da03-ed8a-4dd4-8c68-b7ed7bf70b69.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\dce716cf-b564-4166-a745-094ed4e17c80.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\dce716cf-b564-4166-a745-094ed4e17c80.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\ddebd48d-d24d-4822-b29a-0f5820e56f38.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\ddebd48d-d24d-4822-b29a-0f5820e56f38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\e7c1077b-cc58-4d14-b50a-9910e2018544.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\e7c1077b-cc58-4d14-b50a-9910e2018544.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\f5a41ecf-9eaf-475a-b78a-fb75466ff2ab.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\f5a41ecf-9eaf-475a-b78a-fb75466ff2ab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\fafb9eb3-7aef-425a-a85d-74fd32f1e331.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\fafb9eb3-7aef-425a-a85d-74fd32f1e331.jpg"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\Uploads\\yp2mjzvg.me3",
+      "PackagePath": "staticwebassets\\Uploads\\yp2mjzvg.me3"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\app.css",
+      "PackagePath": "staticwebassets\\assets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\app.min.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\app.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\app.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\icons.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\css\\icons.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\icons.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\js\\pages\\dashboard-analytics.init.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-analytics.init.js"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\js\\pages\\dashboard-crypto.init.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\dashboard-crypto.init.js"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\assets\\js\\pages\\form-wizard.init.js",
+      "PackagePath": "staticwebassets\\assets\\js\\pages\\form-wizard.init.js"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\favicon-dark.ico",
+      "PackagePath": "staticwebassets\\favicon-dark.ico"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\favicon-light.ico",
+      "PackagePath": "staticwebassets\\favicon-light.ico"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\logo-sm-dark.png",
+      "PackagePath": "staticwebassets\\logo-sm-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\logo-sm-light.png",
+      "PackagePath": "staticwebassets\\logo-sm-light.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\logo-text-dark.png",
+      "PackagePath": "staticwebassets\\logo-text-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\logo-text-light.png",
+      "PackagePath": "staticwebassets\\logo-text-light.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\placeholder.png",
+      "PackagePath": "staticwebassets\\placeholder.png"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\tmpk2r2zg.tmp",
+      "PackagePath": "staticwebassets\\tmpk2r2zg.tmp"
+    },
+    {
+      "Id": "C:\\Users\\takuc\\source\\repos\\AspireAdvertisingNetwork\\AdvertisersWebService\\wwwroot\\vector.png",
+      "PackagePath": "staticwebassets\\vector.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AdvertisersWebService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AdvertisersWebService.props",
+      "PackagePath": "build\\AdvertisersWebService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AdvertisersWebService.props",
+      "PackagePath": "buildMultiTargeting\\AdvertisersWebService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AdvertisersWebService.props",
+      "PackagePath": "buildTransitive\\AdvertisersWebService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,272 @@
+﻿@inject DialogService DialogService
+@inject NotificationService alert
+@inject IDataStore datastore
+@inject User localUser
+
+<RadzenSteps Change="OnStepChange" SelectedIndex="selectedIndex" ShowStepsButtons=false>
+    <Steps>
+        <RadzenStepsItem>
+            <RadzenRow>
+                <div style="height: 500px">
+                    <RadzenLabel Text="1. Enter Site Address" />
+                    <div class="">
+                        <p class="text-info">Note: Your url should always begin with https://</p>
+                        <RadzenFormField Variant="Variant.Flat" Text="Site Url">
+                            <RadzenTextBox class="d-block" Change="NewSiteChanged" Placeholder="e.g https://www.almaic.org" Style="min-width: 400px"/>
+                        </RadzenFormField>
+                    </div>
+                </div>
+                <style>
+                    .step-buttons{
+                        transition: opacity 3s;
+                    }
+                    .show-step-buttons {
+                        opacity: 1;
+                    }
+                    .hide-step-buttons {
+                        opacity: 0;
+                    }
+                </style>
+                <div class="@((showStepButtons) ? "show-step-buttons" : "hide-step-buttons") step-buttons d-flex w-100 justify-content-between align-items-center">
+                    <RadzenButton Disabled="true" Style="width: 80px" Text="Previous"/>
+                    <RadzenButton Style="width: 80px" Click="() => OnStepChange(0)" Text="Next" />
+                </div>
+            </RadzenRow>
+        </RadzenStepsItem>
+        <RadzenStepsItem>
+            <RadzenColumn>
+                <div style="height: 500px;" class="d-flex flex-column gap-5">
+                    <RadzenColumn>
+                        <RadzenLabel Text="2. Your Website Is? (Select all that apply!)" />
+                        <RadzenDropDown class="d-block" Multiple AllowClear="true" @bind-Value=categoryValues
+                                        Placeholder="Select all that apply" LoadData=@LoadData AllowFiltering="true"
+                                        Data=@categoryData Style="width: 100%; max-width: 400px;" Name="DropDownFilteringLoadData" />
+                    </RadzenColumn>
+                    <RadzenRow>
+                        <RadzenColumn>
+                            <RadzenLabel Text="2b. Where is your business based?" Component="DropDownBindValue" />
+                            <RadzenRadioButtonList @bind-Value=@continent TValue="int" Orientation=Orientation.Vertical Name="DropDownBindValue">
+                                <Items>
+                                    <RadzenRadioButtonListItem Disabled Text="Asia" Value="1" />
+                                    <RadzenRadioButtonListItem Disabled Text="America" Value="2" />
+                                    <RadzenRadioButtonListItem Disabled Text="Australia" Value="3" />
+                                    <RadzenRadioButtonListItem Disabled Text="Europe" Value="4" />
+                                    <RadzenRadioButtonListItem Disabled Text="Africa" Value="5" />
+                                </Items>
+                            </RadzenRadioButtonList>
+                        </RadzenColumn>
+                        <RadzenColumn>
+                            <RadzenColumn>
+                                <RadzenLabel Text="2c Your Site Contains" Component="DropDownBindValue" />
+                                <RadzenDropDown class="d-block" Multiple AllowClear="true" @bind-Value=audienceValues
+                                                Placeholder="Select all that apply" LoadData=@LoadData AllowFiltering="true"
+                                                Data=@audienceData Style="width: 100%; max-width: 400px;" Name="DropDownFilteringLoadData" />
+                                @code{
+                                    private List<string> audienceData = new List<string>()
+                                    {
+                                        "Profanity",
+                                        "Biblical",
+                                        "GeneralAudience",
+                                        "Children Content",
+                                        "Violence",
+                                        "StrongLanguage",
+                                        "NSFW",
+                                        "LGBTQ",
+                                        "Substance",
+                                        "Nudity",
+                                        "Sex",
+                                        "Exorcism"
+                                    };
+                                }
+                            </RadzenColumn>
+                        </RadzenColumn>
+                    </RadzenRow>
+                </div>
+            </RadzenColumn>
+            <div class="@((showStepButtons) ? "show-step-buttons" : "hide-step-buttons") step-buttons d-flex w-100 justify-content-between align-items-center">
+                <RadzenButton Style="width: 80px" Click="() => OnSecondStepChange(0)" Text="Previous" Disabled="true" />
+                <RadzenButton Style="width: 80px" Click="() => OnSecondStepChange(1)" Text="Next" />
+            </div>
+        </RadzenStepsItem>
+        <RadzenStepsItem Text="Summary">
+            <RadzenRow>
+                <div style="height: 500px">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="d-flex gap-5">
+                            <RadzenText Text="Cotinent" />
+                            <div>
+                                @continent
+                            </div>
+                        </div>
+                        <div class="d-flex gap-5">
+                            <RadzenText Text="Website Categories" />
+                            <div>
+                                @foreach(var item in categories)
+                                {
+                                    <span>@item</span>
+                                }
+                            </div>
+                        </div>
+                        <div class="d-flex gap-5">
+                            <RadzenText Text="Cotinent" />
+                            <div>
+                                @continent
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <div class="@((showStepButtons) ? "show-step-buttons" : "hide-step-buttons") step-buttons d-flex w-100 justify-content-end">
+                    <RadzenButton Style="width: 80px" Click="PushNewSite" Text="Finnish" IsBusy="finnishButtonBusy" BusyText="Computing" />
+                </div>
+            </RadzenRow>
+@*             <RadzenDataGrid TItem="Hobby"
+                            Data="@hobbies"
+                            @bind-Value="@selectedHobbies"
+                            SelectionMode="DataGridSelectionMode.Multiple"
+                            AllowRowSelectOnRowClick="true">
+                <Columns>
+                    <RadzenDataGridColumn TItem="Hobby" Context="hobby">
+                        <Template>
+                            <RadzenCheckBox Value="selectedHobbies.Contains(hobby)" TValue="bool" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Hobby" Title="Hobby" Property="@nameof(Hobby.HobbyName)" />
+                </Columns>
+            </RadzenDataGrid>
+            <RadzenButton Text="Save" Click="@SaveHobbies" /> *@
+        </RadzenStepsItem>
+    </Steps>
+</RadzenSteps>
+
+@code {
+    private bool finnishButtonBusy = false;
+    int selectedIndex = 0;
+    bool showStepButtons = false;
+    int siteVisitorRange = 0;
+    int continent = 5;
+    MonthlyPageView monthlyPageViewsValue = new MonthlyPageView { Id = 1, Range = "1-100k Visits" };
+    List<MonthlyPageView> monthlyPageViewsRange = new List<MonthlyPageView>()
+    { 
+        new MonthlyPageView{ Id = 1, Range = "1-100K Visits"},
+        new MonthlyPageView{ Id = 2, Range = "100K-1M Visits"},
+        new MonthlyPageView{ Id = 3, Range = "1M-10M Visits"},
+        new MonthlyPageView{ Id = 4, Range = "10M+ Visits"}
+    };
+    private string address;
+    private List<string> categoryValues = new List<string>();
+    private List<string> audienceValues = new List<string>();
+    private List<string> categoryData = new List<string>()
+    {
+        "Any",
+        "Gaming",
+        "Sports",
+        "Bible",
+        "Blogs",
+        "News",
+        "Retail",
+        "Adult",
+        "VideoStreaming",
+        "E-Learning",
+        "Social",
+        "Other",
+    };
+    private List<string> categories = new List<string>()
+    {
+        "Ecommerce", "Blog", "Gaming"
+    };
+
+    // private List<Hobby> hobbies = new List<Hobby>() { new("Games"), new("Sport"), new("Movies"), new("Books"), new("Music") };
+    // private IList<Hobby> selectedHobbies = new List<Hobby>();
+    // private List<Hobby> savedHobbies = new List<Hobby>();
+
+    void LoadData(LoadDataArgs args)
+    {
+        var query = categories.AsQueryable();
+
+        if (!string.IsNullOrEmpty(args.Filter))
+        {
+            query = query.Where(c => c.ToLower().Contains(args.Filter.ToLower()));
+        }
+
+        categories = query.ToList();
+
+        InvokeAsync(StateHasChanged);
+    }
+    private bool IsWebsiteValid(string args)
+    {
+        try
+        {
+            var web = new HtmlWeb().Load(args);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            return false;
+        }
+    }
+    public void OnStepChange(int index)
+    {
+        if(showStepButtons == false)
+        {
+            alert.Notify(NotificationSeverity.Warning, "Sir Begin by Site Brother 🙂");
+            return;
+        }
+        selectedIndex = 1;
+    }
+    public void OnSecondStepChange(int index)
+    {
+        if(index == 0)
+        {
+            alert.Notify(NotificationSeverity.Warning, "Unsupported 🙂");
+            return;
+        }
+        selectedIndex = 2;
+    }
+    public void NewSiteChanged(string siteName)
+    {
+        if (!IsWebsiteValid(siteName))
+        {
+            alert.Notify(NotificationSeverity.Error, $"{siteName} is a malformed or inaccessible site");
+            showStepButtons = false;
+            return;
+        }
+        showStepButtons = true;
+        address = siteName;
+        alert.Notify(NotificationSeverity.Success, $"{siteName} parsed successfully");
+        StateHasChanged();
+    }
+
+    public async Task PushNewSite()
+    {
+        finnishButtonBusy = true;
+        try
+        {
+            var user = await datastore.GetUserAsync(localUser);
+            if(user is not null)
+            {
+                var site = new RegisteredWebsite()
+                {
+                    AdsEnabled = false,
+                    Domain = address,
+                    ExcludedPages = new List<string>(),
+                    HasScriptTag = false,
+                    UserID = user.Id,
+                    Audience = audienceValues,
+                    Continent = "Africa",
+                    Categories = categoryValues,
+                };
+
+                var newSite = await datastore.PostSiteAsync(site);
+            }
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine();
+            alert.Notify(NotificationSeverity.Error, ex.Message);
+        }
+        finally
+        {
+            finnishButtonBusy = false;
+        }
+    }
+}

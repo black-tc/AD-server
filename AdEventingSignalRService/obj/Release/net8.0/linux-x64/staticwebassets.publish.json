@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZclLNh9jOtWtAteV8iKF15cDgiQ6yc50cDm0wYWkh3w=",
+  "Source": "AdEventingSignalRService",
+  "BasePath": "_content/AdEventingSignalRService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

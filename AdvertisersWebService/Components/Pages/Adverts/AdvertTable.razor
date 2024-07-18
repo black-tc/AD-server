@@ -1,0 +1,122 @@
+﻿@inject DialogService DialogService
+@inject User localUser
+@inject IDataStore dataStore
+
+@code {
+    async Task ShowDialogWithCustomCssClasses()
+    {
+        await DialogService.OpenAsync("Add a new Site", ds =>
+    @<div>
+        <AddSiteSteps />
+    </div>
+    , new DialogOptions()
+    {
+        CssClass = "",
+        WrapperCssClass = "custom-dialog-wrapper-class",
+        CloseDialogOnOverlayClick = false,
+        Style = "width: 100%; height: 100%; padding: 70px;",
+        ShowClose = true,
+        CloseDialogOnEsc = false,
+        AutoFocusFirstElement = true,
+        Resizable = true,
+    });
+    }
+}
+<div class="">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title mb-0">Your Campaigns</h4>
+        </div><!-- end card header -->
+
+        <div class="card-body">
+            <div class="row g-4 mb-3">
+                <div class="col-sm-auto">
+                    <div>
+                        <a href="newadvert" class="btn btn-success add-btn"><i class="ri-add-line align-bottom me-1"></i> New Campaign</a>
+                        <button class="btn btn-soft-danger"><i class="ri-delete-bin-2-line"></i></button>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="d-flex justify-content-sm-end">
+                        <div class="search-box ms-2">
+                            <input type="text" class="form-control search" placeholder="Search...">
+                            <i class="ri-search-line search-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <RadzenDataGrid TItem="Campaign" Data="@userCampaigns">
+                <EmptyTemplate>
+                    <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;" class="@((progressVisible) ? "d-none" : "d-block")">No records to display.</p>
+                    <div class="d-flex justify-content-center">
+                        <RadzenProgressBarCircular Value="100" ShowValue="false" Visible="progressVisible" Mode="ProgressBarMode.Indeterminate" />
+                    </div>
+                </EmptyTemplate>
+                <Columns>
+                    <RadzenDataGridColumn TItem="Campaign" Property="Id" Title="Sn" Width="50px" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="Campaign" Property="Name" Title="Name">
+                        <Template Context="campaign">
+                            <div>
+                                <a href=@($"site-dashboard/{campaign.Id}") class="text-decoration-underline">@campaign.Name</a>
+                            </div>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Campaign" Property="IsActive" Title="Ads Enabled">
+                        <Template Context="campaign">
+                            <div>
+                                <RadzenSwitch @bind-Value=@campaign.IsActive InputAttributes="@(new Dictionary<string,object>(){ { "aria-label", "Switch value" }})" />
+                            </div>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Campaign" Property="ConversionsEnabled" Title="Conversions Enabled?" />
+                    <RadzenDataGridColumn TItem="Campaign" Property="PaymentType" Title="Payment Type" />
+                    <RadzenDataGridColumn TItem="Campaign" Property="Created" Title="Conversions Enabled?">
+                        <Template Context="campaign">
+                            <div>
+                                @campaign.Created!.Value.ToShortDateString()
+                            </div>
+                        </Template>
+                    </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="Campaign" Property="AdvertLinkAddress" Title="Redirect Website" />
+                </Columns>
+            </RadzenDataGrid>
+        </div><!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+
+@code {
+    string emptyText = "No Items to display!";
+    static bool progressVisible = true;
+    List<Campaign>? userCampaigns = new List<Campaign>();
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            try
+            {
+                var user = await dataStore.GetUserAsync(localUser);
+                if (user is not null)
+                {
+                    localUser.Id = user.Id;
+                    try
+                    {
+                        userCampaigns = await dataStore.GetCampaignsAsync(user.Id);
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                }
+
+                progressVisible = false;
+                StateHasChanged();
+            }
+            catch (Exception ex)
+            {
+                progressVisible = false;
+            }
+        }
+
+    }
+}

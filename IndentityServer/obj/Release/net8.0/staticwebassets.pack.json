@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AspireAdvertisingNetwork\\IndentityServer\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\IndentityServer.bundle.scp.css",
+      "PackagePath": "staticwebassets\\IndentityServer.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\AspireAdvertisingNetwork\\IndentityServer\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.IndentityServer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.IndentityServer.props",
+      "PackagePath": "build\\IndentityServer.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.IndentityServer.props",
+      "PackagePath": "buildMultiTargeting\\IndentityServer.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.IndentityServer.props",
+      "PackagePath": "buildTransitive\\IndentityServer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
